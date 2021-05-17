@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0;}
+        ul, li {list-style: none;}
+
+        body {height: 1000px;}
+
+        header {position: fixed; left:0px; top: 0px; width: 100%; z-index: 50;}
+
+        section {margin-top: 160px;}
+
+        .logo {text-align: center; background-color: #fff;}
+        .menu {background-color: black; text-align: center;}
+        .menu > li {display: inline-block;}
+        .menu > li > a {display: block; padding: 20px; color:#fff; text-decoration: none;}
+        .menu > li > a:hover {background-color: #777;}
+
+
+        /* 
+        sticky - 설정된 영역에 도달하기 전까지는 일반적인 형식, 설정된 위치에 도달하면 fixed
+        1. top, bottom, left, right 중 한가지 옵션이 반드시 존재해야함
+        2. 어떤 부모요소든 overflow:hidden 이 있으면 동작하지 않음
+        3. top속성에는 스크롤이 이동하면서 fixed될 지점을 설정(헤더가 고정이라면 헤더의 높이만큼)
+         */
+
+        .inner1 {background-color: thistle; height: 500px;}
+        .inner2 {background-color: mediumaquamarine; position:sticky; top:160px; z-index: 100;}
+        .inner3 {background-color: violet; height: 1500px;}
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/fish.png">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="inner1">내용</div>
+        <div class="inner2">스티키</div>
+        <div class="inner3">내용</div>
+    </section>
+</body>
+</html>

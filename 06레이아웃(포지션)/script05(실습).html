@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0;}
+        body {
+            background-image: url(images/bg.png);
+        }
+        .main {
+            margin: 20px auto;
+            text-align: center;
+        }
+        ul, li {list-style: none;}
+        .menu {
+            width: 100%;
+            
+            background-color: black;
+            text-align: center;
+            
+        }
+        .menu > li {
+            display: inline-block;
+            padding: 20px;
+        }
+        .menu > li > a {
+            color: #fff;
+            text-decoration: none;
+        }
+        li:hover {background-color: #777;}
+
+        .top{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background-color: brown;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        .slider{
+            width: 100%;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .slider  ul {
+            width: 960px;
+            margin: 0 auto;
+        }
+        .slider > ul > li {
+            float: left;
+            width: 25.0000%;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .content {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <div class="main">
+            <img src="images/logo.jpg">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+            </ul>
+        </nav>
+        <div class="top">
+            <a href="#">top</a>
+        </div>
+    </header>
+
+    <article class="slider">
+        <ul>
+            <li><img src="images/item01.png"></li>
+            <li><img src="images/item02.png"></li>
+            <li><img src="images/item03.png"></li>
+            <li><img src="images/item04.png"></li>
+        </ul>
+    </article>
+
+    <section>
+        <div class="content">
+            <img src="images/ipad.jpg">
+        </div>
+    </section>
+</body>
+</html>
