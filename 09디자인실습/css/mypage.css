@@ -1,0 +1,39 @@
+.m-control .m-title {
+    vertical-align: middle;
+    width: 200px; /* 화면이 줄었을때 최소 크기 */
+    
+}
+
+.m-control .form-control {
+    display: inline; /* input이 가로로 배치될 수 있도록 */
+}
+
+.m-control .add {
+    width: 200px;
+}
+
+.m-control .sel {
+    width: 80px;
+
+}
+
+.m-control .sel2 {
+    width: 100px;
+}
+
+.m-control button {
+    vertical-align: top; /* 부트스트랩 버튼에 vertical-align이 적용되어 있어서 맞춰줘야함 none이 없음 */
+}
+
+.addr {
+    width: 100%;
+    display: block;
+}
+
+.titlebtn {
+    text-align: center;
+}
+
+.tab-content {
+    margin-top: 50px;
+}

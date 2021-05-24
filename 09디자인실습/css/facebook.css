@@ -1,0 +1,119 @@
+@media (max-width: 767px) {
+    .aside-facebook {display: none;}
+}
+
+.aside-facebook {
+    margin: 20px auto;
+    padding-left: 25px;
+}
+
+.profile {
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+}
+
+.profile1 {
+    position: relative;
+}
+.profile1 > p {
+    width: 100%;
+    display: inline;
+    padding-left: 10px;
+}
+.profile1 .p1 {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+}
+.profile1 .p2 {
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    margin: 0;
+}
+
+.profile > img {
+    float: left;
+}
+
+.nabi {
+    margin: 10px auto;
+}
+.nabi a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-facebook {
+    margin: 20px auto;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+.write > p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.write > textarea {
+    height: 80px;
+    transition: all 0.5s ease-out;
+    border-radius: 5px;
+}
+.write > textarea:focus {
+    height: 150px;
+}
+
+
+.button {
+    margin: 10px auto;
+    overflow: hidden;
+}
+.button .left {
+    float: left;
+}
+.button .right {
+    float: right;
+}
+
+.newsfeed {
+    margin-top: 10px;
+}
+
+.content {
+    margin-top: 10px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+}
+
+.good {
+    border-bottom: 1px solid #cccccc;
+    
+}
+.good > img {
+    max-width: 30px;
+    height: auto;
+    
+}
+.good > p {
+    display: inline-block;
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+
+.reaction {
+    overflow: hidden;
+    border-bottom: 1px solid #cccccc;
+}
+.reaction > li {
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.reaction > li > a {
+    color: black;
+    font-weight: normal;
+}

@@ -13,7 +13,7 @@
 .join-form {
     /* 부트스트랩에서 col클래스가 float속성을 가지고 잇어서 가운데 정렬이 불가 */
     /* 1개의 col클래스를 가운데 정렬 할때는 margin과 float 제거 */
-    margin: 0 auto;
+    margin: 10px auto;
     float: none;
 }
 
@@ -27,5 +27,44 @@
 @media(max-width:768px) {
     .join-form form {
         padding: 0;
+    }
+}
+
+.title {
+    width: 250px;
+    margin: 70px auto;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.login-form {
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 70px 50px;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 15%);
+    margin-bottom: 174px;
+}
+
+.img > img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .join-form {
+        padding: 14px 30px;
+    }
+}
+@media (max-width: 768px) {
+    .join-form {
+        padding: 14px 0px;
+    }
+}
+@media (min-width: 1200px) {
+    .join-form {
+        padding: 41px 0px;
     }
 }
