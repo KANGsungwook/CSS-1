@@ -51,6 +51,10 @@
     border-right: 1px solid #cccccc;
 }
 
+.fileDiv {
+    display: none;
+}
+
 .write > p {
     font-size: 20px;
     font-weight: lighter;
@@ -89,14 +93,16 @@
 
 .good {
     border-bottom: 1px solid #cccccc;
-    
 }
-.good > img {
+.good > a {
+    text-decoration: none;
+}
+.good > a > img {
     max-width: 30px;
     height: auto;
     
 }
-.good > p {
+.good > a > p {
     display: inline-block;
     margin-bottom: 0px;
     vertical-align: middle;

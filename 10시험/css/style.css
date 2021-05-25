@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Merriweather', serif;
+
+    width: 100%;
+    min-width: 320px;
+
+}
+
+img {
+    max-width: 100%; /* 사이즈가 변했을 때 너비 유지 */
+    height: auto; /* 너비에 따라 높이 변경 */
+}
+
+input, textarea, button, select {
+    -webkit-appearance: none; /* 브라우저 별로 고유하게 적용되는 form관련 요소들의 css 제거 */
+    -moz-appearance: none;
+    -o-appearance: none;
+
+}
+
+ul, li, dl, ol {
+    list-style: none; /* 순서요소들의 리스트스타일 제거 */
+}
+
+section {
+    margin: 50px 0;
+}
+
+/* ============================= */
+/* header */
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+header h1 {
+    background-color: #fff;
+    font-size: 100px;
+    letter-spacing: 30px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+}
+.topmenu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+}
+.topmenu > li {
+    float: left;
+    margin: 10px 20px;
+}
+.topmenu > li > a {
+    text-decoration: none;
+    color: #555;
+}
+
+
+.slider {
+    width: 100%;
+    background-color: #444;
+    text-align: center;
+    height: 45px;
+}
+.slider-menu {
+    overflow: hidden;
+}
+.slider-menu > li {
+    display: inline-block;
+}
+.slider-menu > li > a {
+    display: block;
+    color: #fff;
+    height: 40px;
+    line-height: 45px;
+    padding: 0 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    transition: all 0.5s linear 0s;
+}
+.slider-menu > li > a:hover {
+    border-bottom: 5px solid #fff;
+}
+
+.header2 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #444;
+    opacity: 0;
+}
+.header2 .navbar-toggle {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.header2 .ac > img {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.nav-text > li > a {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .header1 {
+        opacity: 0;
+    }
+    .header2 {
+        opacity: 1;
+    }
+
+}
+
+/* ============================ */
+
+/* 사이드바 */
+.side {
+    width: 100px;
+    position: fixed;
+    top: 500px;
+    right: 0;
+    z-index: 10;
+}
+.side-menu {
+    margin-bottom: 0;
+}
+.side-menu li {
+    background-color: #282828;
+    text-align: center;
+    font-size: 15px;
+}
+.side-menu li a {
+    display: block;
+    padding: 15px 0;
+    border-top: 1px solid #4d4d4d;
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 10px;
+    font-family: 'Nanum Myeongjo',serif;
+    line-height: 1.3;
+    letter-spacing: -1px;
+}
+.side-menu li a h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+.side-menu li a h3, p {
+    padding : 0;
+    margin: 0;
+}
+
+/* ========================= */
+/* 본문1 */
+section {
+    margin-top: 155px;
+}
+.main-img {
+    position: relative;
+}
+.main-img > img {
+    width: 100%;
+}
+.main-text {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.main-text > h2 {
+    font-size: 36px;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, .3);
+    margin-bottom: 5px;
+}
+.main-text > p {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, .3);
+    margin-bottom: 5px;
+}
+@media(max-width:768px) {
+    .main-text > h2 {
+        font-size: 20px;
+    }
+    .main-text > p {
+        font-size: 10px;
+    }
+}
+
+/* ============================= */
+
+/* 본문2 */
+
+.content {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+}
+@media (max-width:767px){
+    .content {
+        float: none;
+    }
+}
+.content > img {
+    width: 100%;
+}
+.content > h2 {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.content > h3 {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.content-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+}
+
+.content .content-hover a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 30px;
+}
+
+.content-hover:hover {
+    opacity: 1;
+}
